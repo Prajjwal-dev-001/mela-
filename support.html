@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#101b20" />
+    <title>Mela · Daan patra</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      body {
+        overflow: auto;
+        min-height: 100svh;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+        background:
+          linear-gradient(#101b20df, #101b20),
+          url("images/mela-panorama.png") center/cover fixed;
+      }
+      .support-page {
+        width: min(510px, 100%);
+        padding: 28px;
+        border: 1px solid #d4ad6366;
+        border-radius: 16px;
+        background: #14262aee;
+        text-align: center;
+      }
+      .support-page .brand {
+        display: inline-block;
+      }
+      .support-page h1 {
+        font-size: 32px;
+        margin: 20px 0 12px;
+        letter-spacing: -0.5px;
+      }
+      .support-page > p {
+        font-size: 12px;
+        line-height: 1.8;
+      }
+      .support-page .eyebrow {
+        display: block;
+        margin-top: 27px;
+        font-size: 9px;
+      }
+      .support-page .secondary {
+        display: inline-block;
+        text-decoration: none;
+        color: #f2d29b;
+        margin-top: 15px;
+      }
+      .qr-crop {
+        position: relative;
+        width: min(320px, 100%);
+        aspect-ratio: 462/612;
+        margin: 22px auto;
+        overflow: hidden;
+        border-radius: 12px;
+        background: white;
+        box-shadow: 0 8px 30px #0005;
+      }
+      .qr-crop img {
+        position: absolute;
+        width: 145.8874459%;
+        height: auto;
+        max-width: none;
+        left: -22.94372294%;
+        top: -85.13071895%;
+        display: block;
+      }
+      .support-note {
+        font-size: 11px;
+        text-align: left;
+      }
+      .support-page .tiny {
+        font-size: 9px;
+        margin-bottom: 0;
+      }
+      .scan-label {
+        color: #f6d19c;
+        font-size: 12px !important;
+        font-weight: 600;
+      }
+      @media (max-width: 400px) {
+        body {
+          padding: 14px;
+        }
+        .support-page {
+          padding: 22px;
+        }
+        .support-page h1 {
+          font-size: 29px;
+        }
+      }
+    </style>
+    <script defer="" src="js/script.js"></script>
+  </head>
+  <body>
+    <main class="support-page">
+      <a class="brand" href="index.html">mela<span>एक शाम फिर से</span></a>
+      <p class="eyebrow">🪔 DAAN PATRA · OPTIONAL CREATOR SUPPORT</p>
+      <h1>Mela pasand aaya?<br /><em>Thoda sa pyaar.</em></h1>
+      <p>
+        Scan this QR with any UPI app to leave voluntary support for the mela.
+      </p>
+      <div
+        class="qr-crop"
+        role="img"
+        aria-label="Daan patra QR code for optional UPI support"
+      >
+        <img src="images/daan-patra-source.jpeg" alt="" aria-hidden="true" />
+      </div>
+      <p class="scan-label">Scan &amp; support with any UPI app</p>
+      <div class="support-note">
+        <strong>Support is optional. This is not a purchase.</strong><br />All
+        games, rides and virtual souvenirs stay free. No physical item, delivery
+        or ticket is offered in return.
+      </div>
+      <a class="secondary" href="index.html">← Back to the mela</a>
+      <p class="tiny">
+        Check the recipient and amount in your UPI app before confirming. Your
+        UPI PIN belongs only in your payment app.
+      </p>
+    </main>
+  </body>
+</html>

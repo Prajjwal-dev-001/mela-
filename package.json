@@ -1,0 +1,22 @@
+{
+  "name": "mela",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node serve.mjs",
+    "start": "node serve.mjs",
+    "build": "node build-multiplayer.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@trystero-p2p/torrent": "^0.26.0",
+    "esbuild": "^0.28.2",
+    "peerjs": "^1.5.5",
+    "trystero": "^0.26.0"
+  }
+}

@@ -1,0 +1,1171 @@
+:root {
+  color-scheme: dark;
+  --ink: #101b20;
+  --cream: #faeed6;
+  --gold: #f3bb70;
+  --muted: #bcc3bc;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: var(--ink);
+  color: var(--cream);
+  font-family: "DM Sans", sans-serif;
+  overflow: hidden;
+}
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+button {
+  font: inherit;
+  cursor: pointer;
+}
+button:focus-visible,
+a:focus-visible,
+main:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 5px;
+}
+button {
+  color: inherit;
+}
+header {
+  position: fixed;
+  z-index: 20;
+  inset: 0 0 auto;
+  height: 104px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5vw;
+  background: linear-gradient(#101b20dd, transparent);
+}
+.brand {
+  color: var(--cream);
+  text-decoration: none;
+  font:
+    600 45px "Playfair Display",
+    serif;
+  letter-spacing: -3px;
+  line-height: 1;
+}
+.brand span {
+  display: block;
+  font:
+    9px "DM Sans",
+    sans-serif;
+  letter-spacing: 2px;
+  margin-top: 9px;
+  color: var(--gold);
+}
+nav {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+nav button {
+  border: 0;
+  background: none;
+  font-size: 12px;
+}
+nav button span {
+  margin-left: 9px;
+}
+nav .invite {
+  border: 1px solid #f5d39a66;
+  border-radius: 5px;
+  padding: 13px 20px;
+}
+#soundButton {
+  color: #d5dcd6;
+}
+#world {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  height: 100svh;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  overscroll-behavior-x: contain;
+}
+#world::-webkit-scrollbar {
+  display: none;
+}
+.scene {
+  position: relative;
+  flex: 0 0 100%;
+  height: 100%;
+  overflow: hidden;
+  scroll-snap-align: start;
+  isolation: isolate;
+  background: #101b20;
+}
+.hero-art {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      #101b20 0%,
+      #101b20e8 18%,
+      #101b2070 47%,
+      #101b2000 65%
+    ),
+    linear-gradient(
+      0deg,
+      #101b20 2%,
+      transparent 24%,
+      transparent 70%,
+      #101b2080
+    ),
+    url("../images/mela-panorama.png") 64% 72% / auto 82% no-repeat;
+  z-index: -3;
+}
+.hero-art:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, #101b20, transparent 19%);
+}
+.hero-copy {
+  position: absolute;
+  top: 24%;
+  left: 8%;
+  max-width: 650px;
+}
+.eyebrow {
+  color: var(--gold);
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.live-dot {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background: var(--gold);
+  border-radius: 50%;
+  box-shadow: 0 0 12px #f5bb62;
+}
+.hindi {
+  font-size: 17px;
+  color: var(--gold);
+  margin: 34px 0 12px;
+}
+h1,
+h2 {
+  font:
+    500 clamp(42px, 4.8vw, 76px)/1.16 "Playfair Display",
+    serif;
+  letter-spacing: -2px;
+  margin: 0 0 24px;
+}
+h1 em,
+h2 em {
+  color: var(--gold);
+  font-weight: 500;
+}
+h2 {
+  font-size: clamp(38px, 4.2vw, 64px);
+}
+p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #d1d5cc;
+}
+.intro {
+  margin-bottom: 28px;
+}
+.primary {
+  border: 1px solid #ffd89b;
+  background: var(--gold);
+  color: #243029;
+  border-radius: 5px;
+  padding: 16px 22px;
+  font-size: 13px;
+  font-weight: 700;
+  display: inline-flex;
+  gap: 30px;
+  align-items: center;
+  box-shadow: 0 5px 40px #e4a45913;
+  transition:
+    transform 0.2s,
+    background 0.2s;
+}
+.primary:hover {
+  transform: translateY(-3px);
+  background: #ffd194;
+}
+.primary span {
+  font-size: 18px;
+}
+.tiny {
+  font-size: 10px;
+  color: #a5b1a9;
+  letter-spacing: 0.3px;
+  margin-top: 17px;
+}
+.scene-caption {
+  position: absolute;
+  bottom: 126px;
+  left: 8%;
+  font-size: 8px;
+  letter-spacing: 2px;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  color: #c7cbbd;
+}
+.scene-caption > span:nth-child(2) {
+  color: var(--gold);
+}
+.entry-note {
+  position: absolute;
+  right: 8%;
+  bottom: 128px;
+  font:
+    italic 15px "Playfair Display",
+    serif;
+  color: #e8c99b;
+}
+.scene-backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background:
+    linear-gradient(90deg, #101b20ee, #101b20a8 60%, #101b2055),
+    linear-gradient(0deg, #101b20 2%, transparent 40%),
+    url("../images/mela-panorama.png") var(--position) center/auto 100%
+      no-repeat;
+  filter: saturate(0.8);
+}
+.scene-content {
+  margin: 0 auto;
+  width: min(1050px, 84%);
+  height: 100%;
+  padding-top: max(130px, 17vh);
+  position: relative;
+}
+.scene-content h2 {
+  margin-top: 25px;
+}
+.stall-card {
+  position: absolute;
+  right: 0;
+  top: 29%;
+  width: 340px;
+  background: #19352f;
+  padding: 0 25px 28px;
+  border: 1px solid #d7a85b66;
+  text-align: center;
+  border-radius: 7px;
+  box-shadow: 0 25px 100px #0009;
+}
+.stall-awning {
+  height: 46px;
+  margin: 0 -25px;
+  background: repeating-linear-gradient(
+    90deg,
+    #bd5e4a 0 34px,
+    #ead9af 34px 68px
+  );
+  border-radius: 5px 5px 16px 16px;
+}
+.toys {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 180px;
+  color: #f0c575;
+  font-size: 100px;
+}
+.pinwheel {
+  display: inline-block;
+  animation: spin 14s linear infinite;
+  font-size: 80px;
+  color: #dd836d;
+}
+.second {
+  color: #80c1af;
+}
+.toy-horse {
+  font-size: 100px;
+}
+.shop-name {
+  display: block;
+  letter-spacing: 3px;
+  font-size: 9px;
+  margin: 10px 0 25px;
+}
+.game-choices {
+  display: flex;
+  gap: 22px;
+  margin-top: 28px;
+}
+.activity {
+  border: 1px solid #e7b96b55;
+  background: #142a2bdc;
+  border-radius: 9px;
+  padding: 22px 28px;
+  width: 260px;
+  text-align: left;
+}
+.activity strong,
+.activity small {
+  display: block;
+}
+.activity small {
+  color: #bbc5b8;
+  font-size: 11px;
+  margin-top: 9px;
+}
+.balloon-art {
+  height: 100px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+.balloon-art i {
+  height: 58px;
+  width: 44px;
+  display: inline-block;
+  border-radius: 50%;
+  background: #df806f;
+  position: relative;
+  box-shadow: inset -9px -4px 10px #0002;
+}
+.balloon-art i:after {
+  content: "";
+  position: absolute;
+  top: 58px;
+  left: 22px;
+  width: 1px;
+  height: 24px;
+  background: #e4cf9b;
+}
+.balloon-art i:nth-child(2) {
+  background: #e9ba60;
+  transform: translateY(-9px);
+}
+.balloon-art i:nth-child(3) {
+  background: #7fb9a8;
+}
+.rings-art {
+  display: block;
+  height: 100px;
+  text-align: center;
+  font-size: 93px;
+  line-height: 90px;
+  color: var(--gold);
+}
+.food-menu {
+  display: flex;
+  gap: 18px;
+  margin-top: 30px;
+}
+.food-menu button {
+  padding: 25px 20px;
+  width: 200px;
+  border: 1px solid #bc955455;
+  border-radius: 9px;
+  background: #1c3029df;
+}
+.food-menu span {
+  font:
+    45px "Playfair Display",
+    serif;
+  color: #e8a758;
+  display: block;
+  height: 75px;
+}
+.food-menu strong,
+.food-menu small {
+  display: block;
+}
+.food-menu small {
+  font-size: 10px;
+  margin-top: 10px;
+  color: #bcc3b5;
+}
+.wheel {
+  position: absolute;
+  width: 340px;
+  height: 390px;
+  right: 40px;
+  top: 23%;
+  filter: drop-shadow(0 0 18px #efa34c44);
+}
+.wheel-circle {
+  border: 4px dotted var(--gold);
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  animation: spin 40s linear infinite;
+}
+.wheel-circle i {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #d59d61;
+}
+.wheel-circle i:nth-child(2) {
+  transform: rotate(45deg);
+}
+.wheel-circle i:nth-child(3) {
+  transform: rotate(90deg);
+}
+.wheel-circle i:nth-child(4) {
+  transform: rotate(135deg);
+}
+.wheel-circle b {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-size: 60px;
+  color: var(--gold);
+}
+.wheel-stand {
+  position: absolute;
+  top: 145px;
+  left: 72px;
+  width: 155px;
+  height: 220px;
+  clip-path: polygon(
+    48% 0,
+    52% 0,
+    100% 100%,
+    91% 100%,
+    50% 12%,
+    9% 100%,
+    0 100%
+  );
+  background: #c5a16f;
+}
+.riding .wheel-circle {
+  animation-duration: 6s;
+}
+.stage {
+  width: 500px;
+  max-width: 100%;
+  margin-top: 28px;
+  border: 6px solid #b5824a;
+  border-top: 0;
+  background: linear-gradient(
+    90deg,
+    #802b30 0 12%,
+    #101c20 20% 80%,
+    #802b30 88%
+  );
+  border-radius: 8px;
+  padding-bottom: 25px;
+}
+.stage-top {
+  text-align: center;
+  background: #8d4140;
+  padding: 10px;
+  font-size: 20px;
+  color: #f4cd8c;
+}
+.stage button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  height: 155px;
+  border: 0;
+  background: none;
+}
+.stage small {
+  color: #a9b8ae;
+  font-size: 10px;
+}
+.play-icon {
+  font-size: 60px;
+  color: var(--gold);
+}
+.spark-symbol {
+  font-size: 150px;
+  color: var(--gold);
+  height: 190px;
+  animation: glow 3s ease-in-out infinite;
+}
+.ravana {
+  position: absolute;
+  right: 30px;
+  top: 23%;
+  width: 330px;
+  height: 350px;
+  text-align: center;
+  color: #e1b46a;
+  transition:
+    filter 2s,
+    opacity 3s;
+}
+.crown {
+  font-size: 85px;
+  line-height: 1;
+}
+.heads {
+  font-size: 20px;
+  white-space: nowrap;
+}
+.heads b {
+  font-size: 45px;
+}
+.ravana-body {
+  margin: 0 auto;
+  width: 110px;
+  height: 190px;
+  background: repeating-linear-gradient(
+    0deg,
+    #b65a46 0 25px,
+    #d79e5b 25px 29px
+  );
+  clip-path: polygon(0 0, 100% 0, 90% 60%, 100% 100%, 0 100%, 10% 60%);
+  font-size: 65px;
+  line-height: 130px;
+}
+.flames {
+  display: none;
+  font-size: 130px;
+  color: #ffb33f;
+  position: absolute;
+  bottom: 0;
+  left: 90px;
+}
+.burning .flames {
+  display: block;
+  animation: glow 0.3s infinite alternate;
+}
+.burning .ravana {
+  filter: drop-shadow(0 0 40px #f86a20);
+}
+.burnt .ravana {
+  opacity: 0.15;
+}
+.scene.finale .primary {
+  margin-top: 32px;
+}
+footer {
+  position: fixed;
+  z-index: 20;
+  inset: auto 5vw 0;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #d9cfaa25;
+  background: linear-gradient(transparent, #101b20bb);
+}
+.location {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 11px;
+  min-width: 220px;
+}
+.compass {
+  font-size: 25px;
+  color: var(--gold);
+}
+.location small {
+  color: #9ca99e;
+  font-size: 9px;
+  margin-left: 14px;
+}
+.trail {
+  display: flex;
+  gap: 13px;
+}
+.trail button {
+  padding: 5px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #63736a;
+  border: 0;
+  transition: 0.25s;
+}
+.trail button.active {
+  background: var(--gold);
+  box-shadow: 0 0 10px #e2b47066;
+  transform: scale(1.3);
+}
+.walk-controls {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.walk-controls > span {
+  font-size: 8px;
+  letter-spacing: 1px;
+  color: #a9b4a8;
+  margin-right: 15px;
+}
+.walk-controls button {
+  border: 1px solid #c6bb9766;
+  background: #132024b3;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
+dialog {
+  background: #14262a;
+  color: var(--cream);
+  border: 1px solid #bd995d88;
+  border-radius: 14px;
+  max-width: calc(100% - 28px);
+  width: 640px;
+  max-height: 86svh;
+  padding: 40px;
+  box-shadow: 0 30px 150px #000a;
+}
+dialog::backdrop {
+  background: #061116cf;
+  backdrop-filter: blur(8px);
+}
+.close {
+  position: absolute;
+  right: 12px;
+  top: 10px;
+  font-size: 28px;
+  background: none;
+  border: 0;
+  z-index: 2;
+}
+.modal-title {
+  font:
+    500 34px "Playfair Display",
+    serif;
+  margin: 10px 0 18px;
+}
+.modal-eyebrow {
+  color: var(--gold);
+  letter-spacing: 2px;
+  font-size: 10px;
+}
+.modal-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 22px;
+}
+.secondary {
+  border: 1px solid #c6a66d77;
+  background: transparent;
+  border-radius: 5px;
+  padding: 12px 16px;
+}
+.souvenir {
+  font-size: 85px;
+  text-align: center;
+  padding: 15px;
+  color: var(--gold);
+}
+.support-note {
+  background: #0e1d21;
+  border: 1px solid #c5a36944;
+  padding: 18px;
+  border-radius: 6px;
+  font-size: 12px;
+  line-height: 1.8;
+  color: #d2d8c8;
+}
+.map-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.map-grid button {
+  background: #203733;
+  border: 1px solid #9d885c66;
+  text-align: left;
+  padding: 18px;
+  border-radius: 6px;
+}
+.map-grid small {
+  display: block;
+  color: var(--gold);
+  margin-bottom: 7px;
+}
+iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border: 0;
+  border-radius: 8px;
+}
+#fireworks {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 35;
+}
+#toast {
+  position: fixed;
+  bottom: 108px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  padding: 12px 22px;
+  background: #f3d39c;
+  color: #172723;
+  border-radius: 8px;
+  opacity: 0;
+  transition: 0.3s;
+  z-index: 60;
+  font-size: 12px;
+  pointer-events: none;
+  text-align: center;
+}
+#toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+.skip {
+  position: fixed;
+  top: -60px;
+  z-index: 99;
+  background: var(--gold);
+  padding: 12px;
+  color: #172723;
+}
+.skip:focus {
+  top: 5px;
+}
+.share-preview {
+  background:
+    linear-gradient(#10272a55, #10272a),
+    url("../images/mela-panorama.png") center/cover;
+  aspect-ratio: 1.6;
+  border: 1px solid #ad8d5a66;
+  border-radius: 8px;
+  text-align: center;
+  padding: 32px 16px;
+}
+.share-preview strong {
+  font:
+    italic 32px "Playfair Display",
+    serif;
+  color: #ffe0a8;
+}
+.share-preview p {
+  font-size: 12px;
+}
+.sound-options {
+  display: flex;
+  gap: 18px;
+  margin: 24px 0;
+}
+.sound-options label {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 13px;
+}
+input {
+  accent-color: var(--gold);
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes glow {
+  50% {
+    filter: drop-shadow(0 0 25px #f3bb7088);
+    transform: scale(1.03);
+  }
+}
+@media (min-width: 1500px) {
+  .hero-art {
+    background-size:
+      auto,
+      auto,
+      100% auto;
+  }
+  .hero-copy {
+    top: 25%;
+  }
+}
+@media (max-width: 900px) {
+  header {
+    height: 90px;
+    padding: 0 6vw;
+  }
+  nav {
+    gap: 16px;
+  }
+  nav button {
+    font-size: 11px;
+  }
+  #mapButton {
+    display: none;
+  }
+  .hero-copy {
+    left: 7%;
+    top: 22%;
+  }
+  h1 {
+    font-size: 60px;
+  }
+  .stall-card {
+    width: 280px;
+    right: 0;
+    top: 43%;
+  }
+  .scene-content {
+    padding-top: 135px;
+  }
+  .scene-content h2 {
+    font-size: 44px;
+  }
+  .wheel {
+    right: -40px;
+    top: 42%;
+    transform: scale(0.7);
+    transform-origin: top right;
+  }
+  .ravana {
+    right: -20px;
+    top: 43%;
+    transform: scale(0.75);
+    transform-origin: top right;
+  }
+  .walk-controls > span {
+    display: none;
+  }
+  .location {
+    min-width: 0;
+  }
+  .entry-note {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  header {
+    height: 80px;
+  }
+  .brand {
+    font-size: 37px;
+  }
+  .brand span {
+    font-size: 7px;
+  }
+  nav {
+    gap: 12px;
+  }
+  nav .invite {
+    padding: 10px 12px;
+    font-size: 10px;
+  }
+  #soundButton {
+    font-size: 10px;
+  }
+  #soundButton span {
+    margin-left: 0;
+  }
+  .hero-art {
+    background:
+      linear-gradient(
+        0deg,
+        #101b20 5%,
+        #101b2010 33%,
+        #101b2099 54%,
+        #101b20 82%
+      ),
+      url("../images/mela-panorama.png") 11% 80% / auto 56% no-repeat;
+  }
+  .hero-copy {
+    top: 16%;
+    left: 7%;
+    width: 87%;
+  }
+  .eyebrow {
+    font-size: 8px;
+    letter-spacing: 1.3px;
+  }
+  .hindi {
+    margin-top: 23px;
+    font-size: 13px;
+  }
+  h1 {
+    font-size: clamp(38px, 10.8vw, 59px);
+    letter-spacing: -1.4px;
+    margin-bottom: 15px;
+  }
+  .intro {
+    font-size: 12px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+  .primary {
+    padding: 13px 17px;
+    font-size: 12px;
+  }
+  .hero-copy > .tiny {
+    font-size: 9px;
+  }
+  .scene-caption {
+    bottom: 99px;
+    left: 7%;
+    font-size: 6px;
+    letter-spacing: 1px;
+    gap: 8px;
+  }
+  .scene-content {
+    padding-top: 112px;
+    width: 86%;
+  }
+  .scene-content h2 {
+    font-size: 37px;
+    margin-top: 22px;
+    letter-spacing: -1px;
+  }
+  .scene-content p {
+    font-size: 12px;
+  }
+  .scene-backdrop {
+    background:
+      linear-gradient(0deg, #101b20 5%, #101b20b0 40%, #101b20e8 76%),
+      url("../images/mela-panorama.png") var(--position) bottom/auto 85%
+        no-repeat;
+  }
+  .stall-card {
+    position: relative;
+    right: auto;
+    top: auto;
+    width: min(280px, 100%);
+    margin: 25px auto 0;
+    padding-bottom: 17px;
+  }
+  .stall-awning {
+    height: 30px;
+  }
+  .toys {
+    height: 100px;
+  }
+  .toys span {
+    font-size: 65px;
+  }
+  .shop-name {
+    margin-bottom: 16px;
+    font-size: 8px;
+  }
+  .game-choices {
+    gap: 12px;
+    margin-top: 25px;
+  }
+  .activity {
+    padding: 14px 12px;
+    flex: 1;
+    min-width: 0;
+  }
+  .activity strong {
+    font-size: 12px;
+  }
+  .activity small {
+    font-size: 9px;
+    line-height: 1.6;
+  }
+  .balloon-art {
+    gap: 8px;
+    height: 100px;
+  }
+  .balloon-art i {
+    width: 30px;
+    height: 45px;
+  }
+  .balloon-art i:after {
+    top: 45px;
+    left: 15px;
+  }
+  .food-menu {
+    gap: 9px;
+    flex-wrap: wrap;
+  }
+  .food-menu button {
+    padding: 15px 10px;
+    flex: 1;
+    min-width: 90px;
+  }
+  .food-menu span {
+    font-size: 30px;
+    height: 50px;
+  }
+  .food-menu strong {
+    font-size: 12px;
+  }
+  .food-menu small {
+    font-size: 9px;
+    line-height: 1.5;
+  }
+  .wheel {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: 220px;
+    height: 240px;
+    transform: scale(0.65);
+    transform-origin: top left;
+    margin: 18px auto -60px;
+  }
+  .wheel-circle {
+    width: 300px;
+    height: 300px;
+  }
+  .ride-content .primary {
+    position: relative;
+  }
+  .stage {
+    margin-top: 25px;
+  }
+  .spark-symbol {
+    font-size: 135px;
+    height: 180px;
+  }
+  .ravana {
+    position: relative;
+    top: auto;
+    right: auto;
+    transform: scale(0.6);
+    transform-origin: top center;
+    margin: 0 auto -140px;
+    width: 100%;
+  }
+  .scene.finale .primary {
+    margin-top: 0;
+  }
+  footer {
+    inset: auto 6vw 0;
+    height: 77px;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .location {
+    font-size: 10px;
+    gap: 7px;
+  }
+  .location small {
+    font-size: 8px;
+    margin-left: 7px;
+  }
+  .compass {
+    font-size: 19px;
+  }
+  .trail {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 10px;
+  }
+  .trail button {
+    width: 4px;
+    height: 4px;
+    padding: 3px;
+  }
+  .walk-controls button {
+    height: 31px;
+    width: 31px;
+  }
+  .walk-controls {
+    margin-bottom: 6px;
+  }
+  dialog {
+    padding: 30px 20px;
+  }
+  .modal-title {
+    font-size: 28px;
+  }
+  .sound-options {
+    flex-direction: column;
+  }
+  .share-preview strong {
+    font-size: 27px;
+  }
+  #toast {
+    width: 80%;
+    bottom: 95px;
+  }
+}
+@media (max-height: 700px) {
+  .hero-copy {
+    top: 16%;
+  }
+  .hindi {
+    margin-top: 15px;
+  }
+  h1 {
+    font-size: 44px;
+  }
+  .intro {
+    margin-bottom: 15px;
+  }
+  .scene-content {
+    padding-top: 95px;
+  }
+  .scene-content h2 {
+    font-size: 33px;
+    margin: 15px 0;
+  }
+  .scene-content p {
+    margin: 10px 0;
+  }
+  .stall-card {
+    margin-top: 15px;
+  }
+  .toys {
+    height: 75px;
+  }
+  .wheel {
+    height: 200px;
+    margin-top: 5px;
+  }
+  .stage button {
+    height: 125px;
+  }
+  .spark-symbol {
+    height: 135px;
+    font-size: 110px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *:before,
+  *:after {
+    animation: none !important;
+    scroll-behavior: auto !important;
+    transition: none !important;
+  }
+}
+.scene-caption {
+  bottom: 104px;
+}
+.entry-note {
+  bottom: 106px;
+}
+.secondary {
+  color: var(--cream);
+  text-decoration: none;
+}
+.scene-backdrop {
+  transform: translateX(var(--parallax, 0px)) scale(1.06);
+  will-change: transform;
+}
+@media (max-width: 600px) {
+  .scene-caption {
+    bottom: 99px;
+  }
+}

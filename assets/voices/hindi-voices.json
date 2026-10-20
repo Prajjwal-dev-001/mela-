@@ -1,0 +1,142 @@
+{
+  "audio": "/assets/voices/hindi-vendors.mp3",
+  "language": "hi-IN",
+  "duration": 148.32326530612244,
+  "clips": {
+    "Sharma ji ki chaat! Papdi ki crunch, dahi ki thandak—bolo, khatti-meethi ya chatpati?": {
+      "start": 0.2248,
+      "end": 5.8343,
+      "text": "शर्मा जी की चाट! पापड़ी की क्रंच, दही की ठंडक! बोलो, खट्टी मीठी या चटपटी?"
+    },
+    "Dahi, imli aur sev—ekdum balanced! Yeh hui na mela wali chaat.": {
+      "start": 6.7743,
+      "end": 11.1848,
+      "text": "दही, इमली और सेव! एकदम बैलेंस्ड! ये हुई ना मेले वाली चाट!"
+    },
+    "Extra chutney, extra sev. Sharma ji kanjoosi nahi karte!": {
+      "start": 12.1248,
+      "end": 15.3362,
+      "text": "एक्स्ट्रा चटनी, एक्स्ट्रा सेव! शर्मा जी कंजूसी नहीं करते!"
+    },
+    "Jalebi garam garam! Bahar se kurkuri, andar se sheere wali. Meetha ho jaaye?": {
+      "start": 16.2762,
+      "end": 21.5181,
+      "text": "जलेबी गरमा गरम! बाहर से कुरकुरी, अंदर से शीरे वाली! मीठा हो जाए?"
+    },
+    "Yeh lo, kadhai se seedha! Dhyaan se—garam hai, teekhi bilkul nahi 😄": {
+      "start": 22.4581,
+      "end": 27.0333,
+      "text": "ये लो! कढ़ाई से सीधा! ध्यान से, गरम है! तीखी बिल्कुल नहीं!"
+    },
+    "Jalebi aur thandi rabri! Bhaiya, aaj toh royal treat ho gayi.": {
+      "start": 27.9733,
+      "end": 31.8714,
+      "text": "जलेबी और ठंडी रबड़ी! भैया, आज तो रॉयल ट्रीट हो गई!"
+    },
+    "Golgappe! Chhe ke bees ki awaaz toh suni hogi—yahan virtual plate free. Paani kaunsa?": {
+      "start": 32.8114,
+      "end": 38.4476,
+      "text": "गोलगप्पे! छह के बीस की आवाज़ तो सुनी होगी! यहाँ वर्चुअल प्लेट फ्री! पानी कौन सा?"
+    },
+    "Arre wah, sher ho tum! Teekha paani aur end mein ek sukhi puri. Paani bhi rakh lo 😭": {
+      "start": 39.3876,
+      "end": 45.7571,
+      "text": "अरे वाह! शेर हो तुम! तीखा पानी और एंड में एक सूखी पूरी! पानी भी रख लो!"
+    },
+    "Imli ka meetha, pudine ki khushboo. Ek aur? Yeh last wala free!": {
+      "start": 46.6971,
+      "end": 51.3943,
+      "text": "इमली का मीठा, पुदीने की खुशबू! एक और? ये लास्ट वाला फ्री!"
+    },
+    "Desi chowmein! Kadhai ki chhan-chhan suno. Noodles long, mela night longer!": {
+      "start": 52.3343,
+      "end": 57.5114,
+      "text": "देसी चाउमीन! कढ़ाई की छन छन सुनो! नूडल्स लॉन्ग, मेला नाइट लॉन्गर!"
+    },
+    "Fresh veggies, garam noodles! Fork pakdo—plate sambhal ke, bhaiya!": {
+      "start": 58.3181,
+      "end": 63.621,
+      "text": "फ्रेश वेजीज़, गरम नूडल्स! फोर्क पकड़ो! प्लेट संभाल के, भैया!"
+    },
+    "Thoda Schezwan, thoda swag! Chilli sauce side mein rakh di.": {
+      "start": 64.561,
+      "end": 68.4867,
+      "text": "थोड़ा शेज़वान, थोड़ा स्वैग! चिली सॉस साइड में रख दी!"
+    },
+    "Steam momos ready! Chatni laal zaroor hai, par main pehle poochhta hoon—kitni chahiye?": {
+      "start": 69.4267,
+      "end": 75.1152,
+      "text": "स्टीम मोमोज़ रेडी! चटनी लाल ज़रूर है, पर मैं पहले पूछता हूँ! कितनी चाहिए?"
+    },
+    "Soft momos, garam steam, chutney alag. Perfect planning, boss!": {
+      "start": 75.8733,
+      "end": 80.14,
+      "text": "सॉफ्ट मोमोज़, गरम स्टीम, चटनी अलग! परफेक्ट प्लानिंग, बॉस!"
+    },
+    "Bas thodi si! Momo dubao, poora tairao mat 😄": {
+      "start": 81.08,
+      "end": 84.2733,
+      "text": "बस थोड़ी सी! मोमो डुबाओ, पूरा तैराओ मत!"
+    },
+    "Malai kulfi! Ghoom-ghoom ke thak gaye? Thandi kulfi se break banta hai.": {
+      "start": 85.1771,
+      "end": 90.2181,
+      "text": "मलाई कुल्फी! घूम घूम के थक गए? ठंडी कुल्फी से ब्रेक बनता है!"
+    },
+    "Pista wali thandak! Jaldi kha lena, mela ki lights mein pighal jaayegi.": {
+      "start": 91.1581,
+      "end": 95.8143,
+      "text": "पिस्ता वाली ठंडक! जल्दी खा लेना! मेले की लाइट्स में पिघल जाएगी!"
+    },
+    "Asli bachpan wala flavour. Na chilli, na tension—sirf malai!": {
+      "start": 96.7543,
+      "end": 101.5219,
+      "text": "असली बचपन वाला फ्लेवर! ना चिली, ना टेंशन! सिर्फ़ मलाई!"
+    },
+    "Popcorn! Phat-phat ready! Jhoola dekhte hue ek bucket toh banti hai.": {
+      "start": 102.4619,
+      "end": 107.1048,
+      "text": "पॉपकॉर्न! फट फट रेडी! झूला देखते हुए एक बकेट तो बनती है!"
+    },
+    "Butter extra, crunch double! Movie nahi, poora mela chal raha hai.": {
+      "start": 108.0448,
+      "end": 113.321,
+      "text": "बटर एक्स्ट्रा, क्रंच डबल! मूवी नहीं, पूरा मेला चल रहा है!"
+    },
+    "Meetha caramel, golden popcorn. Ek mutthi mere liye bhi chhodna!": {
+      "start": 114.1095,
+      "end": 119.0467,
+      "text": "मीठा कैरमल, गोल्डन पॉपकॉर्न! एक मुट्ठी मेरे लिए भी छोड़ना!"
+    },
+    "Gulaabi baadal le lo! Cotton candy—haath mein bachpan, muh mein meetha.": {
+      "start": 119.9867,
+      "end": 124.3638,
+      "text": "गुलाबी बादल ले लो! कॉटन कैंडी! हाथ में बचपन, मुँह में मीठा!"
+    },
+    "Yeh lo gulaabi baadal! Photo pehle, bite baad mein—warna gaayab!": {
+      "start": 125.1067,
+      "end": 129.4124,
+      "text": "ये लो गुलाबी बादल! फोटो पहले, बाइट बाद में! वरना गायब!"
+    },
+    "Arre wah! Poora baadal chahiye? Yeh lo—share karna mat bhoolna.": {
+      "start": 130.3524,
+      "end": 134.901,
+      "text": "अरे वाह! पूरा बादल चाहिए? ये लो! शेयर करना मत भूलना!"
+    },
+    "Aao bhaiya! Chamakti talwaar, rang-birange masks, hawa se baat karte balloons!": {
+      "start": 135.841,
+      "end": 141.1048,
+      "text": "आओ भैया! चमकती तलवार! रंग बिरंगे मास्क! हवा से बात करते बलून!"
+    },
+    "Teen shot! Maar ke dikhao bhaiya!": {
+      "start": 141.9876,
+      "end": 143.9533,
+      "text": "तीन शॉट! मार के दिखाओ भैया!"
+    },
+    "Paanch ring! Ek baar try karo!": {
+      "start": 144.8933,
+      "end": 146.9952,
+      "text": "पाँच रिंग! एक बार ट्राई करो!"
+    }
+  }
+}
